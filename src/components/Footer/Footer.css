@@ -9,17 +9,21 @@
 .footer-container-one {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    margin: 40px 30px;
+    /* margin: 40px 30px; */
+    margin-left: 30px;
+    margin-top: 40px;
 }
 
 .footer-container div {
     justify-content: space-around;
 }
 
-.first {
+/* .first {
     margin-left: 5px;
+} */
+.second{
+      margin-left: 25px;
 }
-
 h2 {
     font-family: 'Manrope';
     font-style: normal;

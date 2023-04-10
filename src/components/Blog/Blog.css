@@ -1,0 +1,15 @@
+.actual-part{
+    display: grid;
+    grid-template-rows: repeat(3,1fr);
+    color: beige;
+    margin: 50px;
+}
+h2{
+    color: black;
+}
+.container{
+    width: 100%;
+}
+.title-my{
+    text-align: center;
+}

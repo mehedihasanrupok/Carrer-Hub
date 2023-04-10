@@ -9,7 +9,7 @@ const Footer = () => {
                 <h2>Timely Talents</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, culpa illo.
                     Ipsum magni atque commodi placeat reprehenderit. Accusamus, est delectus.</p>
-                <img src="../../assets/Icons/Group 9969.png" alt=""  />
+                <img src="../../../public/Icons/Group 9969.png" alt=""  />
             </div>
             <div className='second'>
                 <h3>Company</h3>

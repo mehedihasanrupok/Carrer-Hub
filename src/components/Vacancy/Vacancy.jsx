@@ -1,9 +1,11 @@
 import React from 'react';
 import './Vacancy.css';
 import { Link } from 'react-router-dom';
+import JobDetails from '../JobDetails/JobDetails';
 
 const Vacancy = ({ vacancy }) => {
-    const { company_image, post_name, company_name, job_nature, job_time, company_location, salary_range } = vacancy
+    const { company_image, post_name, company_name, job_nature, job_time, company_location, salary_range } = vacancy;
+    // const handler = () => <JobDetails keys={vacancy.id} vacancy={vacancy}></JobDetails>
     return (
         <div className='main_div'>
             <img src={company_image} alt="" />
@@ -17,7 +19,7 @@ const Vacancy = ({ vacancy }) => {
                 <p className='location'><img src="../../../public/Icons/Location Icon.png" alt="" />{company_location}</p>
                 <p className='location'><img src="../../../public/Icons/Frame.png" alt="" />Salary:{salary_range}</p>
             </div>
-            <Link to={`/${vacancy.id}`} className='button'>View Details</Link>
+            <Link to={`/Vacancy/${vacancy.id}`} className='button'>View Details</Link>
 
         </div>
     );

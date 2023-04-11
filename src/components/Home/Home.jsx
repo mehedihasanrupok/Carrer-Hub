@@ -20,9 +20,12 @@ const Home = () => {
 
 
     const [index, setIndex] = useState(4);
+    const [seeAll, setSeeAll] = useState(false);
     const initialPosts = index;
+
     const loadMore = () => {
         setIndex(index + 2);
+        setSeeAll(true);
       } 
     return (
         <div>
@@ -53,7 +56,7 @@ const Home = () => {
                         ></Vacancy>)
                     }
                 </div>
-                <button onClick={loadMore} className='seeAll'>See More</button>
+              {!seeAll && <button onClick={loadMore} className='seeAll'>See More</button>}
             </div>
 
         </div>

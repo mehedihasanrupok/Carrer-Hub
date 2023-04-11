@@ -1,0 +1,28 @@
+[
+    {
+      "id":1,
+      "image": "./Icons/accounts 1.png",
+      "department": "Account & Finance",
+      "job_vacancy": "300+ Job Available"
+    },
+    {
+      "id":2,
+      "image": "./Icons/business 1.png",
+      "department": "Creative Design",
+      "job_vacancy": "100+ Job Available"
+    },
+    {
+      "id":3,
+      "image": "./Icons/social-media 1.png",
+      "department": "Marketing & Sales",
+      "job_vacancy": "150 Job Available"
+    },
+    {
+      "id":4,
+      "image": "./Icons/chip 1.png",
+      "department": "Engineering Job",
+      "job_vacancy": "224 Job Available"
+    } 
+    
+  ]
+  

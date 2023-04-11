@@ -1,0 +1,30 @@
+.job-title {
+    text-align: center;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 66px;
+    color: #1A1919;
+    margin-bottom: 10px;
+}
+
+.catagory-container {
+    margin-top: 30px;
+}
+
+.description {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: #757575;
+}
+.each-catagory{
+    display: flex;
+    margin-left: 50px;
+    margin-top: 50px;
+    justify-content: space-around;
+}

@@ -22,19 +22,25 @@
     text-align: center;
     color: #757575;
 }
-.each-catagory{
+
+.each-catagory {
     display: flex;
     margin-left: 50px;
     margin-top: 50px;
     justify-content: space-around;
 }
-.each-vacancy{
+
+.each-vacancy {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 30px;
     margin: 20px 60px;
 
 }
-.seeAll{
-    margin: auto;
+
+.seeAll {
+    text-align: center;
+    margin-left: 48%;
+    background: linear-gradient(90deg, #7E90FE 0%, #9873FF 100%);
+    border-radius: 8px;
 }

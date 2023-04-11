@@ -18,6 +18,12 @@ const Home = () => {
             .then((data) => setJob(data))
     }, []);
 
+
+    const [index, setIndex] = useState(4);
+    const initialPosts = index;
+    const loadMore = () => {
+        setIndex(index + 2);
+      } 
     return (
         <div>
             <div>
@@ -41,13 +47,13 @@ const Home = () => {
                 <p className='description'>Explore thousands of job opportunities with all the information you need. Its your future</p>
                 <div className='each-vacancy'>
                     {
-                        vacancies.slice(0,4).map(vacancy => <Vacancy
+                        vacancies.slice(0,initialPosts).map(vacancy => <Vacancy
                         key = {vacancy.id}
                         vacancy={vacancy}
                         ></Vacancy>)
                     }
                 </div>
-                <button className='seeAll'>See More</button>
+                <button onClick={loadMore} className='seeAll'>See More</button>
             </div>
 
         </div>

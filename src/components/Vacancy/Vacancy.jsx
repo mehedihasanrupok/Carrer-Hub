@@ -1,5 +1,6 @@
 import React from 'react';
 import './Vacancy.css';
+import { Link } from 'react-router-dom';
 
 const Vacancy = ({ vacancy }) => {
     const { company_image, post_name, company_name, job_nature, job_time, company_location, salary_range } = vacancy
@@ -16,7 +17,7 @@ const Vacancy = ({ vacancy }) => {
                 <p className='location'><img src="../../../public/Icons/Location Icon.png" alt="" />{company_location}</p>
                 <p className='location'><img src="../../../public/Icons/Frame.png" alt="" />Salary:{salary_range}</p>
             </div>
-            <button className='button'>View Details</button>
+            <Link to={`/${vacancy.id}`} className='button'>View Details</Link>
 
         </div>
     );

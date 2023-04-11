@@ -1,0 +1,63 @@
+.main_div {
+    padding: 25px;
+    border: 1px solid #E8E8E8;
+    border-radius: 8px;
+}
+
+.job_quality {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+.job-nature{
+    border: 1px solid blue;
+    padding: 5px;
+    border-radius: 4px;
+    color: #9873FF;
+}
+.job_salary {
+    padding-top: 0px;
+    display: flex;
+    gap: 20px;
+    margin-top: 0px;
+}
+
+.post {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 33px;
+    color: #474747;
+    margin-bottom: 0px;
+
+}
+
+.button {
+    background: linear-gradient(90deg, #7E90FE 0%, #9873FF 100%);
+    border-radius: 4px;
+    color: white;
+}
+
+.company {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 27px;
+    color: #757575;
+    margin-bottom: 10px;
+}
+
+.location {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 27px;
+
+    /* Dark 03 */
+
+    color: #757575;
+}

@@ -28,3 +28,13 @@
     margin-top: 50px;
     justify-content: space-around;
 }
+.each-vacancy{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 30px;
+    margin: 20px 60px;
+
+}
+.seeAll{
+    margin: auto;
+}

@@ -16,50 +16,51 @@ import {
 const Statistics = () => {
     const data = [
         {
-            name: 'Page A',
-            uv: 590,
-            pv: 800,
-            amt: 1400,
+            name: 'Assignment 1',
+            Number: 49,
+            
         },
         {
-            name: 'Page B',
-            uv: 868,
-            pv: 967,
-            amt: 1506,
+            name: 'Assignment 2',
+            Number: 60,
+            
         },
         {
-            name: 'Page C',
-            uv: 1397,
-            pv: 1098,
-            amt: 989,
+            name: 'Assignment 3',
+            Number: 60,
+           
         },
         {
-            name: 'Page D',
-            uv: 1480,
-            pv: 1200,
-            amt: 1228,
+            name: 'Assignment 4',
+            Number: 60,
+            
         },
         {
-            name: 'Page E',
-            uv: 1520,
-            pv: 1108,
-            amt: 1100,
+            name: 'Assignment 5',
+            Number: 60,
+            
         }, {
-            name: 'Page F',
-            uv: 1400,
-            pv: 680,
-            amt: 1700,
+            name: 'Assignment 6',
+            Number: 53,
+        },
+        {
+            name: 'Assignment 7',
+            Number: 59,
+        },
+        {
+            name: 'Assignment 8',
+            Number: 30,
         },
     ];
     return (
         <div>
             <ComposedChart
-                width={500}
+                width={1400}
                 height={400}
                 data={data}
                 margin={{
                     top: 20,
-                    right: 20,
+                    right: 10,
                     bottom: 20,
                     left: 20,
                 }}
@@ -69,8 +70,8 @@ const Statistics = () => {
                 <YAxis />
                 <Tooltip />
                 <Legend />
-                <Bar dataKey="uv" barSize={20} fill="#413ea0" />
-                <Line type="monotone" dataKey="uv" stroke="green" />
+                <Bar dataKey="Number" barSize={20} fill="#413ea0" />
+                <Line type="monotone" dataKey="Number" stroke="green" />
             </ComposedChart>
         </div>
     );

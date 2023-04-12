@@ -2,19 +2,34 @@ import React, { useEffect, useState } from 'react';
 import Vacancy from '../Vacancy/Vacancy';
 import { useLoaderData, useParams } from 'react-router-dom';
 import './JobDetails.css';
+import { addToDb } from '../../utilities/fakedb';
 
 const JobDetails = () => {
     const { id } = useParams();
+    console.log(id);
     const jobs = useLoaderData();
     console.log(jobs);
-    const [jobDetails, setJobDetails] = useState([]);
+    const [jobDetails, setJobDetails] = useState({});
+
+
+    const [cart, setCart] = useState([]);
+
+    const handleAddToCart = () => {
+        // const newCart = [...cart, jobDetails];
+        // setCart(newCart);
+        // addToDb(jobDetails);
+        const newCart = JSON.parse(localStorage.getItem('appliedJobs')) || [];
+        localStorage.setItem('appliedJobs', JSON.stringify([...newCart,jobDetails]));
+    }
+    // console.log(cart);
+
 
     useEffect(() => {
-        if (jobs) {
+        // if (jobs) {
             const jobData = jobs.find(job => job.id == id);
             setJobDetails(jobData);
-        }
-    })
+        // }
+    },[])
     console.log(jobDetails);
     return (
         <div>
@@ -41,7 +56,7 @@ const JobDetails = () => {
                      <p className='body-p'><img src="../../../public/Icons/Frame-4.png" alt="" />Address: <span className='inside-details'>{jobDetails.company_location}</span></p>
 
                 </div>
-                <button className='apply-button'>Apply Now</button>
+                <button className='apply-button' onClick={handleAddToCart}>Apply Now</button>
                 </div>
                 
             </div>

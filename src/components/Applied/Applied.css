@@ -1,0 +1,23 @@
+.apllied{
+    display: flex;
+    margin-left: 75px;
+    margin-right: 50px;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px solid blue;
+    border-radius: 10px;
+    margin-top: 25px;
+}
+.post{
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 33px;
+    color: #474747;
+    margin-bottom: 0px;
+}
+.first {
+    margin-top: 25px;
+    
+}

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Vacancy from '../Vacancy/Vacancy';
+import toast, { Toaster } from 'react-hot-toast';
 import { useLoaderData, useParams } from 'react-router-dom';
 import './JobDetails.css';
 import { addToDb } from '../../utilities/fakedb';
@@ -15,11 +16,19 @@ const JobDetails = () => {
     const [cart, setCart] = useState([]);
 
     const handleAddToCart = () => {
-        // const newCart = [...cart, jobDetails];
-        // setCart(newCart);
-        // addToDb(jobDetails);
+        
+        // const newCart = JSON.parse(localStorage.getItem('appliedJobs')) || [];
+        // localStorage.setItem('appliedJobs', JSON.stringify([...newCart,jobDetails]));
+
+
         const newCart = JSON.parse(localStorage.getItem('appliedJobs')) || [];
-        localStorage.setItem('appliedJobs', JSON.stringify([...newCart,jobDetails]));
+        const exists = newCart.find(job => job.id === jobDetails.id);
+        if (exists) {
+            toast.error('You have already applied to this job');
+        }
+        else {
+            localStorage.setItem('appliedJobs', JSON.stringify([...newCart, jobDetails]));
+        }
     }
     // console.log(cart);
 
@@ -60,7 +69,7 @@ const JobDetails = () => {
                 </div>
                 
             </div>
-
+            <Toaster />
         </div>
     );
 };

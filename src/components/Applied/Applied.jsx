@@ -6,6 +6,7 @@ const Applied = ({ ds }) => {
     const { company_image, post_name, company_name, job_nature, job_time, company_location, salary_range } = ds;
     return (
         <div className='apllied'>
+            
             <div className='first'>
                 <img src={company_image} alt="" />
             </div>

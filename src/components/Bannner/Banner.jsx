@@ -1,6 +1,6 @@
 import React from 'react';
 import './Banner.css';
-
+import img from '../../../public/All Images/P3OLGJ1 copy 1.png';
 const Banner = () => {
     return (
         <div className='banner-container'>
@@ -11,7 +11,7 @@ const Banner = () => {
                 <button className='start-button'>Get Started</button>
             </div>
             <div className='img'>
-                <img src="../../../public/All Images/P3OLGJ1 copy 1.png" alt="" srcset="" />
+                <img src={img} alt="" srcset="" />
             </div>
         </div>
     );

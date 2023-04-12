@@ -79,3 +79,11 @@ h4 {
     line-height: 160%;
     color: rgba(255, 255, 255, 0.4);
 }
+
+@media only screen and (max-width:576px) {
+    .footer-container-one {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+}

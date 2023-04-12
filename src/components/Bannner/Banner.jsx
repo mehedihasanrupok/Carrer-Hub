@@ -10,7 +10,7 @@ const Banner = () => {
                     Come find it. Manage all your job application from start to finish.</p>
                 <button className='start-button'>Get Started</button>
             </div>
-            <div>
+            <div className='img'>
                 <img src="../../../public/All Images/P3OLGJ1 copy 1.png" alt="" srcset="" />
             </div>
         </div>

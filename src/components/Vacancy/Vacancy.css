@@ -38,6 +38,7 @@
     background: linear-gradient(90deg, #7E90FE 0%, #9873FF 100%);
     border-radius: 4px;
     color: white;
+    padding: 10px;
 }
 
 .company {

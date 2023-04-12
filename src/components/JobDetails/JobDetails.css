@@ -1,3 +1,59 @@
-.body-h3{
-    color: blue;
+.body-h3 {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 32px;
+    color: #1A1919;
+}
+
+.full-body {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin-left: 50px;
+    margin-right: 50px;
+    gap: 25px;
+}
+
+.body-detail {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 32px;
+    color: #757575;
+}
+
+.body-p {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 27px;
+    color: #474747;
+}
+
+.inside-details {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 27px;
+    color: #757575;
+}
+
+.card {
+    background: linear-gradient(90deg, rgba(126, 144, 254, 0.1) 0%, rgba(152, 115, 255, 0.1) 100%);
+    border-radius: 8px;
+    padding: 15px;
+}
+
+.apply-button {
+    width: 100%;
+    background: linear-gradient(90deg, #7E90FE 0%, #9873FF 100%);
+    border-radius: 8px;
+}
+.Head{
+    width: 100%;
+    text-align: center;
 }

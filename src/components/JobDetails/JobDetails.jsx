@@ -4,24 +4,48 @@ import { useLoaderData, useParams } from 'react-router-dom';
 import './JobDetails.css';
 
 const JobDetails = () => {
-    const {id} = useParams();
+    const { id } = useParams();
     const jobs = useLoaderData();
     console.log(jobs);
     const [jobDetails, setJobDetails] = useState([]);
-    
-    useEffect( ()=>{
-        if(jobs){
-            const jobData = jobs.find(job =>job.id == id);
+
+    useEffect(() => {
+        if (jobs) {
+            const jobData = jobs.find(job => job.id == id);
             setJobDetails(jobData);
         }
     })
     console.log(jobDetails);
     return (
         <div>
-            <h3 className='body-h3'>{jobDetails.id}</h3>
-            <h3 className='body-h3'>{jobDetails.post_name}</h3>
-            <h3 className='body-h3'>{jobDetails.company_name}</h3>
-            
+            <div className='Head'>
+                <h1  className='head-text'>Job Details</h1>
+            </div>
+            <div className='full-body'>
+                <div>
+                    <p className='body-h3'>Job Description: <span className='body-detail'>{jobDetails.job_description}</span></p>
+                    <p className='body-h3'>Job Responsibility: <span className='body-detail'>{jobDetails.job_responsibility}</span></p>
+                    <p className='body-h3'>Educational Requirements: <br /> <span className='body-detail'>{jobDetails.educational_requirements}</span></p>
+                    <p className='body-h3'>Experiences: <br /><span className='body-detail'>{jobDetails.experience}</span></p>
+                    
+                </div>
+                <div>
+                <div className='card'>
+                     <h3 className='body-p'>Job Details</h3>
+                     <hr />
+                     <p className='body-p'><img src="../../../public/Icons/Frame.png" alt="" />Salary: <span className='inside-details'>{jobDetails.salary_range}</span></p>
+                     <p className='body-p'><img src="../../../public/Icons/Frame-1.png" alt="" />Job Title: <span className='inside-details'>{jobDetails.post_name}</span></p>
+                     <hr />
+                     <p className='body-p'><img src="../../../public/Icons/Frame-2.png" alt="" />Phone: <span className='inside-details'>{jobDetails.phone}</span></p>
+                     <p className='body-p'><img src="../../../public/Icons/Frame-3.png" alt="" />Email: <span className='inside-details'>{jobDetails.email}</span></p>
+                     <p className='body-p'><img src="../../../public/Icons/Frame-4.png" alt="" />Address: <span className='inside-details'>{jobDetails.company_location}</span></p>
+
+                </div>
+                <button className='apply-button'>Apply Now</button>
+                </div>
+                
+            </div>
+
         </div>
     );
 };
